@@ -1,0 +1,10 @@
+footer {
+    background: linear-gradient(75deg, rgb(228, 159, 170), pink);
+    height: 128px;
+}
+
+footer ul {
+    display: flex;
+    width: 40%;
+    justify-content: space-between;
+}

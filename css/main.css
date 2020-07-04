@@ -1,0 +1,46 @@
+main {
+    display: flex;
+    margin-top: 64px;
+}
+
+main .content {
+    margin: 0 64px;
+}
+
+main .content .info {
+    display: flex;
+}
+
+main img {
+    border-radius: 50% 0;
+}
+
+main .title {
+    margin: 128px 0 32px 0;
+    font-weight: 400;
+    font-size: 2.5em;
+    color: rgb(50, 201, 143);
+}
+
+main .first h2, main .second h2 {
+    color: rgb(75, 192, 207);
+    font-weight: 300;
+    margin-bottom: 16px;
+}
+
+main .buttons {
+    margin-top: 32px;
+}
+
+main .buttons button {
+    background: aliceblue;
+    border: none;
+    padding: 16px;
+    margin-right: 16px;
+    cursor: pointer;
+    transition: all .8s ease;
+}
+
+main .buttons button:hover {
+    background: rgb(216, 233, 248);
+}
