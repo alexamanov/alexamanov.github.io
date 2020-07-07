@@ -1,0 +1,51 @@
+.menu-btn {
+	width: 64px; height: 64px;
+	background: #1e1e1e;
+	position: relative;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+}
+
+.menu-btn:hover {
+	background: #333;
+}
+
+.menu-btn span,
+.menu-btn span:before,
+.menu-btn span:after  {
+	position: absolute;
+	top: 50%; left: 50%;
+	width: 20px;
+	height: 2px;
+	background: lime;
+	margin-top: -1px; margin-left: -10px;
+}
+
+.menu-btn span:before,
+.menu-btn span:after {
+	content: '';
+	transition: .5s;
+}
+
+.menu-btn span:before {
+	transform: translateY(-8px);
+}
+
+.menu-btn span:after {
+	transform: translateY(8px);
+}
+
+.menu-btn-active span {
+	height: 0;
+}
+
+.menu-btn-active span:after {
+	transform: rotate(-45deg);
+}
+
+.menu-btn-active span:before {
+	transform: rotate(45deg);
+}

@@ -1,10 +1,15 @@
 footer {
-    background: linear-gradient(75deg, rgb(228, 159, 170), pink);
+    background: linear-gradient(75deg, #1e1e1e, #333);
     height: 128px;
+    color: snow;
 }
 
 footer ul {
     display: flex;
     width: 40%;
     justify-content: space-between;
+}
+
+footer a {
+	color: snow;
 }

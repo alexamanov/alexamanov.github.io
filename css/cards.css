@@ -1,0 +1,51 @@
+.cards {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	margin: 32px auto;
+}
+
+.cards .card {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0 16px;
+	width: 640px; height: 426px;
+	position: relative;
+	font-size: 2.5em;
+	font-weight: 100;
+	perspective: 1000px;
+	padding: 32px;
+}
+
+.cards span {
+	margin: 64px;
+}
+
+.cards .card .front, .cards .card .back {
+	width: 100%; height: 100%;
+	color: snow;
+	position: absolute;
+	left: 0; top: 0;
+	transition: 1s;
+	backface-visibility: hidden;
+}
+
+.cards .card .front {
+	background: url(../img/bengali-fire.jpg);
+	background-position: center;
+}
+
+.cards .card .back {
+	background: url(../img/star.jpg);
+	background-position: center;
+	transform: rotateY(180deg);
+}
+
+.card:hover .front {
+	transform: rotateY(180deg);
+}
+
+.card:hover .back {
+	transform: rotateY(0deg);
+}
