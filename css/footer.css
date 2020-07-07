@@ -1,15 +1,26 @@
 footer {
-    background: linear-gradient(75deg, #1e1e1e, #333);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+    background: url('../img/footer.jpg');
     height: 128px;
     color: snow;
+    background-size: cover;
+    background-position: center;
+    position: relative;
 }
 
 footer ul {
     display: flex;
-    width: 40%;
-    justify-content: space-between;
+    width: 100%;
+    justify-content: space-around;
 }
 
-footer a {
+footer ul img {
+	font-size: 2em;
 	color: snow;
+}
+
+footer ul li {
+	margin: 0 32px;
 }

@@ -4,18 +4,25 @@
 
 body {
     height: 100vh;
-    background: #333;
+    background: snow;
     color: #1e1e1e;
-    font: 1em/1.6em sans-serif;
-    font-size: 1.2em;
+    margin: 0 auto;
 }
 
 header {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    background: rgb(229, 238, 229);
+    background: rgba(229, 238, 229, 0);
     height: 86px;
+    color: #1e1e1e;
+    position: fixed;
+    z-index: 9999;
+    width: 100%;
+    top: 0; left: 0;
+    color: snow;
+    font-size: 1.5em;
+    transition: all 1s;
 }
 
 header nav {
@@ -42,12 +49,26 @@ header nav ul li {
 }
 
 header nav ul li:hover {
-    background: rgb(212, 231, 212);
+    background: #1e1e1e;
+}
+
+li {
+    list-style-type: none;
+}
+
+.lang span {
+    border-radius: 0 50%;
+    padding: 8px;
+    cursor: pointer;
+}
+
+.lang span:hover {
+    background: #1e1e1e;
 }
 
 a {
     text-decoration: none;
-    color: black;
+    color: snow;
 }
 
 header .search {
@@ -61,15 +82,67 @@ header .toggle {
    cursor: pointer;
 }
 
-/*.wrap {
-    width: 100%;
+
+.container {
+    background: #1e1e1e;
+    color: snow;
+}
+
+.container, .sl, .wrap {
     display: flex !important;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
-    padding: 16px;
+    width: 100%;
 }
 
-.wrap .title {
-    margin: 32px 0;
-}*/
+.wrap {
+    flex-direction: column;
+    position: relative;
+}
+
+.title {
+    font-size: 2.6em;
+}
+
+.sl button {
+    font-size: 4.5em;
+    background: rgba(0, 0, 0, 0);
+    color: gold;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    display: flex;
+    margin: 0 32px;
+    outline: none;
+}
+
+.prev {
+    left: 0;
+    z-index: 9999;
+}
+
+.next {
+    right: 0;
+}
+
+.sl button:hover {
+    color: snow;
+}
+
+.img {
+    background-size: cover;
+    background-position: center !important;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.black {
+    background: #1e1e1e;
+}
+
+.black li:hover {
+    background: #333;
+}

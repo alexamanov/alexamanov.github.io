@@ -1,6 +1,5 @@
 .menu-btn {
 	width: 64px; height: 64px;
-	background: #1e1e1e;
 	position: relative;
 	border-radius: 50%;
 	display: flex;
@@ -10,7 +9,7 @@
 }
 
 .menu-btn:hover {
-	background: #333;
+	background: #1e1e1e;
 }
 
 .menu-btn span,
@@ -20,7 +19,7 @@
 	top: 50%; left: 50%;
 	width: 20px;
 	height: 2px;
-	background: lime;
+	background: snow;
 	margin-top: -1px; margin-left: -10px;
 }
 
