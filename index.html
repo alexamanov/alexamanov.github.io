@@ -3,14 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Magic</title>
+    <title>Еще один сайт портфолио</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/cards.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/direction.css">
 
     <link rel="stylesheet" href="css/slick.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet"> 
 
 </head>
 <body>
@@ -18,10 +21,11 @@
     <header>
         <div class="logo"><img src="img/logo.png"></div>
         <div class="lang">
-            <span class="ru">RU</span> | <span class="en">EN</span>
+            <a href="#ru" class="ru active-lang">RU</a>
+            <a href="#en" class="en">EN</a>
         </div>
         <nav>
-            <ul>
+            <ul class="page-list">
                 <li><a href="pages/about.html">О себе</a></li>
                 <li><a href="pages/skills.html">Навыки и умения</a></li>
                 <li><a href="pages/projects.html">Мои работы</a></li>
@@ -38,23 +42,23 @@
     <div class="container">
         <div class="sl">
             <div class="sl_slide wrap">
-                <div class="img" style="background: url('img/1$.jpg');">
+                <div class="img" style="background: url('img/web.jpg');">
                     <h2 class="sl_text title">Веб разработка</h2>
                 </div>
             </div>
             <div class="sl_slide wrap">
-                <div class="img" style="background: url('img/9$.jpg');">
-                    <h2 class="sl_text title">Прогрессивные приложения</h2>
+                <div class="img" style="background: url('img/tasks.jpg');">
+                    <h2 class="sl_text title">Анализ и решение задач</h2>
                 </div>
             </div>
             <div class="sl_slide wrap">
-                <div class="img" style="background: url('img/10$.jpg');">
-                    <h2 class="sl_text title">Мобильная разработка</h2>
+                <div class="img" style="background: url('img/design.jpg');">
+                    <h2 class="sl_text title">Проектирование систем</h2>
                 </div>
             </div>
             <div class="sl_slide wrap">
-                <div class="img" style="background: url('img/6$.jpg');">
-                    <h2 class="sl_text title">Веб дизайн</h2>
+                <div class="img" style="background: url('img/team.jpg');">
+                    <h2 class="sl_text title">Работа в команде</h2>
                 </div>
             </div>
         </div>
@@ -62,39 +66,84 @@
 
     <main>
 
-        <div class="content">
-            <div class="title">От ламера до програмера</div>
-            <div class="info">
-                <div class="first">
-                    <h2>Веб разработка</h2>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore incidunt architecto laudantium animi, minima nihil.</p>
-                </div>
-                <div class="second">
-                    <h2>Будущее за PWA</h2>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat nihil necessitatibus tempora cum nisi optio.</p>
-                </div>
+
+        <div class="direction">
+            <div class="main-direction-title">
+                <h2>Направления.</h2>
             </div>
-            <div class="buttons">
-                <button>Читать больше</button>
-                <button>Лучшие проекты</button>
+            <div class="direction-info">
+                <div class="block">
+                    <div class="block-element">
+                        <img src="img/code.png" alt="img" />
+                        <div class="block-info">
+                            <div class="direction-title">Веб разработка</div>
+                            <div class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, assumenda?</div>
+                        </div>
+                    </div>
+                    <div class="block-element">
+                        <img src="img/function.png" alt="img" />
+                        <div class="block-info">
+                            <div class="direction-title">Проектирование систем</div>
+                            <div class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, assumenda?</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="block">
+                    <div class="block-element">
+                        <img src="img/puzzle.png"alt="img" />
+                        <div class="block-info">
+                            <div class="direction-title">Прогрессивные веб приложения</div>
+                            <div class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, assumenda?</div>
+                        </div>
+                    </div>
+                    <div class="block-element">
+                        <img src="img/privacy.png" alt="img" />
+                        <div class="block-info">
+                            <div class="direction-title">Информационная безопасность</div>
+                            <div class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, assumenda?</div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="picture">
-            <img src="img/wallpaper.jpg" alt="">
+
+        <div class="content">
+            <div class="title">Интересности</div>
+            <div class="one">
+                <div class="text-content">
+                    <div class="info">
+                        <div class="first">
+                            <h2>Прогрессивные веб приложения</h2>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore incidunt architecto laudantium animi, minima nihil.</p>
+                        </div>
+                    </div>
+                    <div class="buttons">
+                        <button>Читать больше</button>
+                    </div>
+                </div>
+                <div id="animation1" class="animation">
+                    <canvas id="c1"></canvas>
+                </div>
+            </div>
+            <div class="one">
+                <div class="text-content">
+                    <div class="info">
+                        <div class="first">
+                            <h2>Восьмибитная музыка</h2>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore incidunt architecto laudantium animi, minima nihil.</p>
+                        </div>
+                    </div>
+                    <div class="buttons">
+                        <button>Читать больше</button>
+                    </div>
+                </div>
+                <div id="animation1" class="animation">
+                    <canvas id="c2"></canvas>
+                </div>
+            </div>
         </div>
 
     </main>
-
-    <div class="cards">
-        <div class="card">
-            <div class="front">
-                <span>Веб разработка</span>
-            </div>
-            <div class="back">
-                <span>PWA</span>
-            </div>
-        </div>
-     </div>
 
     <footer>
         <div class="social-media">
@@ -111,5 +160,7 @@
     <script src="js/jquery.js" ></script>
     <script src="js/slick.js"></script>
     <script src="js/script.js"></script>
+    <script src="js/lang.js"></script>
+    <script src="js/animation1.js"></script>
 </body>
 </html>

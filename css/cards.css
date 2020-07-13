@@ -1,25 +1,41 @@
 .cards {
 	display: flex;
-	justify-content: center;
+	justify-content: space-around;
+	max-width: 1200px;
 	width: 100%;
 	margin: 32px auto;
 }
 
 .cards .card {
 	display: flex;
+	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	margin: 0 16px;
-	width: 640px; height: 426px;
+	width: 128px; height: 128px;
 	position: relative;
-	font-size: 2.5em;
+	font-size: 1.5em;
 	font-weight: 100;
 	perspective: 1000px;
 	padding: 32px;
 }
 
+.cards p {
+	margin: 32px 0 64px 0;
+}
+
+.card-title {
+	margin: 64px 0 32px 0;
+	width: 100%;
+	text-align: center;
+}
+
 .cards span {
-	margin: 64px;
+	/*margin: 64px;*/
+	width: 100%; height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .cards .card .front, .cards .card .back {
@@ -27,8 +43,9 @@
 	color: snow;
 	position: absolute;
 	left: 0; top: 0;
-	transition: 1s;
+	transition: 2s;
 	backface-visibility: hidden;
+	border-radius: 50%;
 }
 
 .cards .card .front {

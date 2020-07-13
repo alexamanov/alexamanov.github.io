@@ -1,8 +1,8 @@
 .menu-btn {
+	display: none;
 	width: 64px; height: 64px;
 	position: relative;
 	border-radius: 50%;
-	display: flex;
 	align-items: center;
 	justify-content: center;
 	cursor: pointer;
@@ -47,4 +47,11 @@
 
 .menu-btn-active span:before {
 	transform: rotate(45deg);
+}
+
+
+@media screen and (max-width: 1100px) {
+    .menu-btn {
+        display: flex;
+    }
 }

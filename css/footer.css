@@ -2,7 +2,7 @@ footer {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-    background: url('../img/footer.jpg');
+    background: rgb(184, 184, 184);
     height: 128px;
     color: snow;
     background-size: cover;

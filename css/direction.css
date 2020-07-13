@@ -1,0 +1,58 @@
+.direction {
+    display: flex;
+}
+
+.direction .main-direction-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 150;
+    font-size: 2em;
+    color: coral;
+    font-family: 'Lobster', cursive;
+    margin: 0 64px;
+}
+
+.direction-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.direction-info .block {
+    display: flex;
+}
+
+.direction-info .block-element {
+    display: flex;
+    padding: 32px 16px;
+}
+
+.direction-info .block-element:hover {
+    background: #e7e4e4;
+    cursor: pointer;
+}
+
+.direction-info .block-element .direction-title {
+    font-size: 1.6em;
+    color: lightcoral;
+}
+
+.direction-info .block-element .block-info {
+    display: flex; 
+    flex-direction: column;
+    margin: 0 32px;
+}
+
+.direction-info .block-element img {
+    
+}
+
+.text {
+    margin-top: 8px;
+}
+
+@media screen and (max-width: 1100px) {
+    .direction, .direction-info .block {
+        flex-direction: column;
+    }
+}

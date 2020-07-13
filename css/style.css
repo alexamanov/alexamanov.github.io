@@ -41,11 +41,14 @@ header nav ul {
 header nav ul li {
     display: flex;
     align-items: center;
+    justify-content: center;
     list-style-type: none;
     height: 100%;
     padding: 0 32px;
     transition: all .4s ease;
     cursor: pointer;
+    width: 256px;
+    color: coral;
 }
 
 header nav ul li:hover {
@@ -56,14 +59,16 @@ li {
     list-style-type: none;
 }
 
-.lang span {
+.lang a {
     border-radius: 0 50%;
     padding: 8px;
     cursor: pointer;
+    background: #1e1e1e;
 }
 
-.lang span:hover {
-    background: #1e1e1e;
+.active-lang {
+    background: green !important;
+    transition: all .5s;
 }
 
 a {
@@ -74,6 +79,7 @@ a {
 header .search {
     margin: 0 32px;
     padding: 0 16px;
+    cursor: pointer;
 }
 
 header .toggle {
@@ -101,18 +107,22 @@ header .toggle {
 }
 
 .title {
-    font-size: 2.6em;
+    font-size: 3.6em;
+    color: snow;
+    font-family: 'Lobster', cursive;
+    background: rgba(0, 0, 0, .5);
+    padding: 16px;
 }
 
 .sl button {
     font-size: 4.5em;
     background: rgba(0, 0, 0, 0);
-    color: gold;
+    color: snow;
     border: none;
     cursor: pointer;
     position: absolute;
     display: flex;
-    margin: 0 32px;
+    margin: 0 64px;
     outline: none;
 }
 
@@ -126,7 +136,7 @@ header .toggle {
 }
 
 .sl button:hover {
-    color: snow;
+    color: aqua;
 }
 
 .img {
@@ -145,4 +155,39 @@ header .toggle {
 
 .black li:hover {
     background: #333;
+}
+
+.one {
+    display: flex;
+    justify-content: space-around;
+    margin: 64px 0;
+    border-bottom: 2px solid black;
+    padding: 32px 0;
+}
+
+.animation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#c1, #c2 {
+    height: 100%;
+}
+
+@media screen and (max-width: 1100px) {
+    .page-list {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    .title {
+        font-size: 2em;
+    }
+
+    .lang {
+        display: none;
+    }
 }

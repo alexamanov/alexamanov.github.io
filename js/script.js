@@ -4,7 +4,7 @@ $('.menu-btn').on('click', function(e) {
 
 $('.sl').slick();
 
-var $window = $(window);
+const $window = $(window);
 $window.on('load scroll', function() {
     var top = $window.scrollTop();
     var height = $window.height();
