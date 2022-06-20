@@ -9,7 +9,7 @@ main .content {
 }
 
 main .content .title {
-    background: rgb(233, 67, 122);
+    background: #000;
     color: snow;
 }
 
@@ -39,14 +39,15 @@ main .buttons {
 }
 
 main .buttons button {
-    background: aliceblue;
+    background: #000;
     border: none;
     padding: 16px;
     margin-right: 16px;
     cursor: pointer;
     transition: all .8s ease;
+    color: snow;
 }
 
 main .buttons button:hover {
-    background: rgb(216, 233, 248);
+    background: #333;
 }
