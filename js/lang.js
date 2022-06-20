@@ -7,14 +7,12 @@ const info = {
     }
 }
 
-const 
-    pageList = $('.page-list'),
+const pageList = $('.page-list'),
     ru = $('.ru'),
     en = $('.en'),
     activity = $('.title');
 
 $(window).on('hashchange', function(e) {
-
     let lang = window.location.hash.slice(1);
 
     if(lang === 'ru') {
@@ -22,17 +20,15 @@ $(window).on('hashchange', function(e) {
         ru.addClass('active-lang');
         en.removeClass('active-lang');
 
-        for(let i = 0; i < info.ru.activity.length; i++) {
+        for (let i = 0; i < info.ru.activity.length; i++) {
             activity[i+1].innerHTML = info.ru.activity[i];
         }
-
     } else if(lang === 'en') {
         pageList.html('<li><a href="pages/about.html">About me</a></li><li><a href="pages/skills.html">Skills</a></li><li><a href="pages/projects.html">My works</a></li>');
         en.addClass('active-lang');
         ru.removeClass('active-lang');
-        for(let i = 0; i < info.en.activity.length; i++) {
+        for (let i = 0; i < info.en.activity.length; i++) {
             activity[i+1].innerHTML = info.en.activity[i];
         }
-    } 
-
+    }
 });
